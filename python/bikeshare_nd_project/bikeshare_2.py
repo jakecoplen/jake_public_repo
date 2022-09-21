@@ -5,6 +5,8 @@ import numpy as np
 from mimetypes import common_types
 from statistics import mode
 
+# list of city names
+# if this list grows and analysis is expanded, add new city names and file names
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
