@@ -5,11 +5,15 @@ import numpy as np
 from mimetypes import common_types
 from statistics import mode
 
+# list of city names
+# if this list grows and analysis is expanded, add new city names and file names
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# if new data is present for months beyond June, then this list will need to be expanded to include all months
 months = ['january','february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december' ]
+
 days_of_week = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
 
 def get_filters():
