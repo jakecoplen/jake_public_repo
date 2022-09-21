@@ -12,7 +12,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 # if new data is present for months beyond June, then this list will need to be expanded to include all months
-months = ['january','february', 'march', 'april', 'may', 'june']
+months = ['january','february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december' ]
+
 days_of_week = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
 
 def get_filters():
