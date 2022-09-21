@@ -173,6 +173,8 @@ def time_stats(df, month, day):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
+    # to create a better user experience, I created this input command
+    # this way a user can see small sets of data at a time, rather than all at once
     pause = input('Press any key to see statistics on the most popular stations and trip.')
     
     print('\nCalculating The Most Popular Stations and Trip...\n')
