@@ -11,6 +11,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# if new data is present for months beyond June, then this list will need to be expanded to include all months
 months = ['january','february', 'march', 'april', 'may', 'june']
 days_of_week = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
 
