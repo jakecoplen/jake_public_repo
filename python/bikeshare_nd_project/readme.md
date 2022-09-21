@@ -1,5 +1,13 @@
 # Readme file for bikeshare.py
 
+## Overview
+This is a python program that allows the user to explore data from a bikeshare system for 3 cities:
+- New York City
+- Washington
+- Chicago
+
+It displays statistics on the rider data.
+
 ## Data files
 To access the data files for this project, go to:
 https://drive.google.com/drive/folders/1uon7d5rekvKKb5PTh0DYIU7Z9tWKnZa6
