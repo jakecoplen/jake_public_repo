@@ -102,7 +102,9 @@ def load_data(city, month, day):
     df['month_name'] = df['Start Time'].dt.month_name()
     df['day_of_week'] = df['Start Time'].dt.day_name()
     df['hour'] = df['Start Time'].dt.hour
+    # creating new field in data frame that concatinates start and end station to show combos
     df['start & end station'] = 'Start - ' + df['Start Station'] + ' || End - ' + df['End Station']
+    
     # filter by month if applicable
     if month != 'all':
         # created list of months and use index position to get corresponding int
