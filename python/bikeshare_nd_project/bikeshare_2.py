@@ -186,7 +186,7 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    # display most commonly used start station
+    # display most commonly used start station for rides
     busiest_start_station = mode(df['Start Station'])
     station_start_counts = df['Start Station'].value_counts()
     print('\nThe most commonly used Start Station was {}, with {} uses.\n'.format(busiest_start_station, station_start_counts[0]))
