@@ -128,7 +128,9 @@ def load_data(city, month, day):
 
 
 def time_stats(df, month, day):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Displays statistics on the most frequent times of travel
+    ."""
 
     pause = input('Press any key to see statistics on total travel time and the most frequent times of travel.')
     
@@ -173,7 +175,9 @@ def time_stats(df, month, day):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """
+    Displays statistics on the most popular stations and trip.
+    """
 
     # to create a better user experience, I created this input command
     # this way a user can see small sets of data at a time, rather than all at once
@@ -204,7 +208,10 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total time spent on trips, as well as average trip duration."""
+    """
+    Displays statistics on the total time spent on trips, as well as average trip duration.
+    """
+
 
     pause = input('Press any key to see statistics on the total and average trip durations.')
     
