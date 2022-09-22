@@ -1,5 +1,12 @@
 # Readme file for bikeshare.py
 
+## Date Created
+
+Project Created on: 2022-09-19
+
+ReadMe file was created on: 2022-09-20
+
+
 ## Overview
 This is a python program that allows the user to explore data from a bikeshare system for 3 cities:
 - New York City
