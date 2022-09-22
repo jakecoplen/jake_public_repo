@@ -267,18 +267,21 @@ def user_stats(df, city):
     print('-'*40)
 
 def raw_data(df):
+    """
+    This function takes user input to allow the user to see rows of raw data until they are satisified or they reach the end of the file
+    """
     while True:
         try:
             see_data = input('Would you like to see raw data? (yes or no)\n')
             if see_data.lower() == 'yes':
                 i = 0
                 while i <= len(df):
-                    print(df.loc[i:i+4,:]) #'print row {} ... fill in later'.format(i+1))
+                    print(df.iloc[i:i+5,:]) 
                     i += 5
                     if (i+1) >= len(df):
                         print('You\'ve reached the end of the file. There is no more raw data to view.')
                         break
-                    else: # elif (i+1)%5 == 0:
+                    else:
                         while True:
                             try:
                                 more_data = input('Would you like to see 5 more rows of data? (yes or no)\n')
@@ -291,8 +294,6 @@ def raw_data(df):
                                     print('Error: that is not a valid input')
                             except:
                                 print('Please enter "Yes" or "No"')     
-                    # yield something
-                    # i += 1
                 break
             elif see_data.lower() == 'no':
                 break
@@ -315,8 +316,23 @@ def main():
         user_stats(df, city)
         raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        while True:
+            try:        
+                restart = input('\nWould you like to restart? Enter yes or no.\n')
+                if restart.lower() == 'no':
+                    response = 'no'
+                    break
+                elif restart.lower() == 'yes':
+                    response = 'yes'
+                    break
+                else:
+                    print('Invalid input: please enter "yes" or "no"')
+            except:
+                print('Please enter "yes" or "no"')
+
+        if response == 'yes':
+            continue
+        elif response == 'no':
             break
 
 
