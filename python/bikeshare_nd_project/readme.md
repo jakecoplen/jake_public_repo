@@ -6,13 +6,14 @@ This is a python program that allows the user to explore data from a bikeshare s
 - Washington
 - Chicago
 
-The user can interact with the program to filter the data in different ways. It displays statistics on the rider data as well as trip duration and popular routes.
+It displays statistics on the rider data.
+
 
 ## Data files
-The data files that are being analyzed are not on GitHub. However, they can be found at the following locattion:
+To access the data files for this project, go to:
 https://drive.google.com/drive/folders/1uon7d5rekvKKb5PTh0DYIU7Z9tWKnZa6
 
-### Notes
+### Credits
 Any and all coding for this project was done using the following sources:
 1. the bikeshare.py file provided as part of the nanodegree
 2. the content and examples within the nanodegree program
