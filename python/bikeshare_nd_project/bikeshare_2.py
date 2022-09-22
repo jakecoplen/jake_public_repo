@@ -158,7 +158,7 @@ def time_stats(df, month, day):
         print('\nYour current dataset is only filtered for {}\'s, therefore the most common day will be {}\n'.format(day.title(), common_day_of_week.title()))
 
 
-    # display the most common start hour
+    # display the most common start hour for rides
     common_hour = mode(df['hour'])
     hour_counts = df['hour'].value_counts()
 
@@ -186,12 +186,12 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    # display most commonly used start station
+    # display most commonly used start station for rides
     busiest_start_station = mode(df['Start Station'])
     station_start_counts = df['Start Station'].value_counts()
     print('\nThe most commonly used Start Station was {}, with {} uses.\n'.format(busiest_start_station, station_start_counts[0]))
 
-    # display most commonly used end station
+    # display most commonly used end station for rides
     busiest_end_station = mode(df['End Station'])
     station_end_counts = df['End Station'].value_counts()
     print('\nThe most commonly used End Station was {}, with {} uses.\n'.format(busiest_end_station, station_end_counts[0]))
