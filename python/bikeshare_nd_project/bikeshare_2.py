@@ -286,7 +286,7 @@ def raw_data(df):
             if see_data.lower() == 'yes':
                 i = 0
                 while i <= len(df):
-                    print(df.iloc[i:i+5,:]) 
+                    print(df.iloc[i:i+5,:]) # added this 'iloc' to display proper row numbers
                     i += 5
                     if (i+1) >= len(df):
                         print('You\'ve reached the end of the file. There is no more raw data to view.')
