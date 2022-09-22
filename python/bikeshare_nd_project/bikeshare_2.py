@@ -191,7 +191,7 @@ def station_stats(df):
     station_start_counts = df['Start Station'].value_counts()
     print('\nThe most commonly used Start Station was {}, with {} uses.\n'.format(busiest_start_station, station_start_counts[0]))
 
-    # display most commonly used end station
+    # display most commonly used end station for rides
     busiest_end_station = mode(df['End Station'])
     station_end_counts = df['End Station'].value_counts()
     print('\nThe most commonly used End Station was {}, with {} uses.\n'.format(busiest_end_station, station_end_counts[0]))
