@@ -158,7 +158,7 @@ def time_stats(df, month, day):
         print('\nYour current dataset is only filtered for {}\'s, therefore the most common day will be {}\n'.format(day.title(), common_day_of_week.title()))
 
 
-    # display the most common start hour
+    # display the most common start hour for rides
     common_hour = mode(df['hour'])
     hour_counts = df['hour'].value_counts()
 
