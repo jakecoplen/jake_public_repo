@@ -198,7 +198,7 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """Displays statistics on the total time spent on trips, as well as average trip duration."""
 
     pause = input('Press any key to see statistics on the total and average trip durations.')
     
