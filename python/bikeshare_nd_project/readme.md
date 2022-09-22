@@ -9,7 +9,7 @@ This is a python program that allows the user to explore data from a bikeshare s
 The user can interact with the program to filter the data in different ways. It displays statistics on the rider data as well as trip duration and popular routes.
 
 ## Data files
-To access the data files for this project, go to:
+The data files that are being analyzed are not on GitHub. However, they can be found at the following locattion:
 https://drive.google.com/drive/folders/1uon7d5rekvKKb5PTh0DYIU7Z9tWKnZa6
 
 ### Notes
