@@ -6,7 +6,6 @@ ReadMe file was created on: 2022-09-20
 
 # Project Title: bikeshare.py
 
- 
 ## Overview
 This is a python program that allows the user to explore data from a bikeshare system for 3 cities:
 - New York City
@@ -20,6 +19,11 @@ It displays statistics on the rider data.
 - `washington.csv`
 - `new_york_city.csv`
 
+
+## Files Used:
+- `chicago.csv`
+- `washington.csv`
+- `new_york_city.csv`
 
 ## Data files
 To access the data files for this project, go to:

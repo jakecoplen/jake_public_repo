@@ -106,7 +106,9 @@ def load_data(city, month, day):
     df['month_name'] = df['Start Time'].dt.month_name()
     df['day_of_week'] = df['Start Time'].dt.day_name()
     df['hour'] = df['Start Time'].dt.hour
+    # creating new field in data frame that concatinates start and end station to show combos
     df['start & end station'] = 'Start - ' + df['Start Station'] + ' || End - ' + df['End Station']
+    
     # filter by month if applicable
     if month != 'all':
         # created list of months and use index position to get corresponding int
@@ -126,7 +128,9 @@ def load_data(city, month, day):
 
 
 def time_stats(df, month, day):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Displays statistics on the most frequent times of travel
+    ."""
 
     pause = input('Press any key to see statistics on total travel time and the most frequent times of travel.')
     
@@ -171,7 +175,9 @@ def time_stats(df, month, day):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """
+    Displays statistics on the most popular stations and trip.
+    """
 
     # to create a better user experience, I created this input command
     # this way a user can see small sets of data at a time, rather than all at once
@@ -202,7 +208,10 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """
+    Displays statistics on the total time spent on trips, as well as average trip duration.
+    """
+
 
     pause = input('Press any key to see statistics on the total and average trip durations.')
     
@@ -268,7 +277,8 @@ def user_stats(df, city):
 
 def raw_data(df):
     """
-    This function takes user input to allow the user to see rows of raw data until they are satisified or they reach the end of the file
+    This function takes user input to allow the user to see rows of raw data until they are satisified or they reach the end of the file.
+    Raw data is output 5 rows at a time.
     """
     while True:
         try:
