@@ -106,7 +106,9 @@ def load_data(city, month, day):
     df['month_name'] = df['Start Time'].dt.month_name()
     df['day_of_week'] = df['Start Time'].dt.day_name()
     df['hour'] = df['Start Time'].dt.hour
+    # creating new field in data frame that concatinates start and end station to show combos
     df['start & end station'] = 'Start - ' + df['Start Station'] + ' || End - ' + df['End Station']
+    
     # filter by month if applicable
     if month != 'all':
         # created list of months and use index position to get corresponding int
@@ -207,8 +209,9 @@ def station_stats(df):
 
 def trip_duration_stats(df):
     """
-    Displays statistics on the total and average trip duration.
+    Displays statistics on the total time spent on trips, as well as average trip duration.
     """
+
 
     pause = input('Press any key to see statistics on the total and average trip durations.')
     
@@ -274,7 +277,8 @@ def user_stats(df, city):
 
 def raw_data(df):
     """
-    This function takes user input to allow the user to see rows of raw data until they are satisified or they reach the end of the file
+    This function takes user input to allow the user to see rows of raw data until they are satisified or they reach the end of the file.
+    Raw data is output 5 rows at a time.
     """
     while True:
         try:
