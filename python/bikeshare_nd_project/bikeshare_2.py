@@ -264,7 +264,8 @@ def user_stats(df, city):
 
 def raw_data(df):
     """
-    This function takes user input to allow the user to see rows of raw data until they are satisified or they reach the end of the file
+    This function takes user input to allow the user to see rows of raw data until they are satisified or they reach the end of the file.
+    Raw data is output 5 rows at a time.
     """
     while True:
         try:
