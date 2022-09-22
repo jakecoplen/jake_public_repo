@@ -1,10 +1,10 @@
-# Readme file for bikeshare.py
-
 ## Date Created
 
 Project Created on: 2022-09-19
 
 ReadMe file was created on: 2022-09-20
+
+# Project Title: bikeshare.py
 
 
 ## Overview
@@ -14,6 +14,11 @@ This is a python program that allows the user to explore data from a bikeshare s
 - Chicago
 
 It displays statistics on the rider data.
+
+## Files Used:
+- `chicago.csv`
+- `washington.csv`
+- `new_york_city.csv`
 
 
 ## Data files
