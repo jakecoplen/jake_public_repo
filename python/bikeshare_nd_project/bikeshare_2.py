@@ -328,6 +328,7 @@ def main():
 
         while True:
             try:        
+                # added try statement to make sure the to check the user input
                 restart = input('\nWould you like to restart? Enter yes or no.\n')
                 if restart.lower() == 'no':
                     response = 'no'
