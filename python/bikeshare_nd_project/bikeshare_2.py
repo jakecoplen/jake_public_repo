@@ -126,7 +126,9 @@ def load_data(city, month, day):
 
 
 def time_stats(df, month, day):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Displays statistics on the most frequent times of travel
+    ."""
 
     pause = input('Press any key to see statistics on total travel time and the most frequent times of travel.')
     
